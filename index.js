@@ -1,4 +1,4 @@
-fetch("YOUR API").then(res => res.json()).then(json => {   // API https://www.coingecko.com/pt/api
+fetch("https://api.coingecko.com/api/v3/simple/price?ids=bitcoin%2Ctether%2Cethereum%2Clitecoin%2Ccardano%2Cdogecoin&vs_currencies=usd&include_24hr_change=true").then(res => res.json()).then(json => {   // API https://www.coingecko.com/pt/api
     const container = document.querySelector(".container");
     const coins = Object.getOwnPropertyNames(json);
 
